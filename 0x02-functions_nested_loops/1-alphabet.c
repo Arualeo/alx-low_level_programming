@@ -1,17 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-/**
- *main-Entry point
- *
- *Return:always 0 (Success)
- */
-int main(void)
-{
-	char i;
+#include <unistd.h>
 
-	for (i = 'a' ; i <= 'z' ; i++)
+/**
+ * print_alphabet - Entry point
+ * Return:0
+ */
+
+void print_alphabet(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
 	{
-		putchar(i);
-		putchar('\n');
+		_putchar(c);
+		c++;
+
 	}
+	_putchar('\n');
+
 }
